@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A mini educational website about the Solar System built with HTML and CSS." />
+  <title>Solar System Planet Database</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="site-shell">
+    <header class="hero">
+      <div class="hero__content">
+        <p class="hero__eyebrow">Mini educational website</p>
+        <h1>Solar System Planet Database</h1>
+        <p class="hero__lead">
+          Explore the eight planets of our Solar System in a clean, data-rich layout.
+          This page combines semantic HTML5 structure with a modern space-inspired design.
+        </p>
+      </div>
+
+      <aside class="hero__panel" aria-label="Solar System summary">
+        <div class="hero__orbit"></div>
+        <div class="hero__stat">
+          <span>8</span>
+          <p>planets in the Solar System</p>
+        </div>
+        <div class="hero__note">🌌 Built with HTML and CSS only</div>
+      </aside>
+    </header>
+
+    <section class="section-card" aria-labelledby="planet-table-title">
+      <div class="section-heading">
+        <p class="section-heading__tag">Planet database</p>
+        <h2 id="planet-table-title">Detailed planetary overview</h2>
+      </div>
+
+      <div class="table-shell">
+        <!-- Semantic table structure keeps the dataset accessible and easy to scan. -->
+        <table>
+          <caption>
+            Data table showing the major physical and orbital properties of each planet in our Solar System.
+          </caption>
+
+          <!-- The table header defines each column and stays visible while scrolling. -->
+          <thead>
+            <tr>
+              <th scope="col">Planet Name</th>
+              <th scope="col">Planet Type</th>
+              <th scope="col">Diameter (km)</th>
+              <th scope="col">Distance from Sun (million km)</th>
+              <th scope="col">Number of Moons</th>
+              <th scope="col">Orbital Period (days)</th>
+              <th scope="col">Average Temperature (&deg;C)</th>
+            </tr>
+          </thead>
+
+          <!-- Each row represents one planet and its main reference values. -->
+          <tbody>
+            <tr>
+              <td><span class="planet-chip">☿ Mercury</span></td>
+              <td>Terrestrial</td>
+              <td>4,879</td>
+              <td>57.9</td>
+              <td>0</td>
+              <td>88</td>
+              <td><span class="temp temp--hot">167</span></td>
+            </tr>
+            <tr>
+              <td><span class="planet-chip">♀ Venus</span></td>
+              <td>Terrestrial</td>
+              <td>12,104</td>
+              <td>108.2</td>
+              <td>0</td>
+              <td>225</td>
+              <td><span class="temp temp--hot">464</span></td>
+            </tr>
+            <tr>
+              <td><span class="planet-chip">🌍 Earth</span></td>
+              <td>Terrestrial</td>
+              <td>12,742</td>
+              <td>149.6</td>
+              <td>1</td>
+              <td>365.2</td>
+              <td><span class="temp temp--moderate">15</span></td>
+            </tr>
+            <tr>
+              <td><span class="planet-chip">♂ Mars</span></td>
+              <td>Terrestrial</td>
+              <td>6,779</td>
+              <td>227.9</td>
+              <td>2</td>
+              <td>687</td>
+              <td><span class="temp temp--cold">-65</span></td>
+            </tr>
+            <tr>
+              <td><span class="planet-chip">♃ Jupiter</span></td>
+              <td>Gas Giant</td>
+              <td>139,820</td>
+              <td>778.5</td>
+              <td>95</td>
+              <td>4,333</td>
+              <td><span class="temp temp--giant">-110</span></td>
+            </tr>
+            <tr>
+              <td><span class="planet-chip">♄ Saturn</span></td>
+              <td>Gas Giant</td>
+              <td>116,460</td>
+              <td>1,433.5</td>
+              <td>146</td>
+              <td>10,759</td>
+              <td><span class="temp temp--giant">-140</span></td>
+            </tr>
+            <tr>
+              <td><span class="planet-chip">⛢ Uranus</span></td>
+              <td>Ice Giant</td>
+              <td>50,724</td>
+              <td>2,872.5</td>
+              <td>27</td>
+              <td>30,688</td>
+              <td><span class="temp temp--giant">-195</span></td>
+            </tr>
+            <tr>
+              <td><span class="planet-chip">♆ Neptune</span></td>
+              <td>Ice Giant</td>
+              <td>49,244</td>
+              <td>4,495.1</td>
+              <td>14</td>
+              <td>60,182</td>
+              <td><span class="temp temp--giant">-200</span></td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="legend" aria-label="Temperature legend">
+          <span class="legend__item"><i class="legend__swatch legend__swatch--hot"></i>Extremely Hot</span>
+          <span class="legend__item"><i class="legend__swatch legend__swatch--moderate"></i>Moderate</span>
+          <span class="legend__item"><i class="legend__swatch legend__swatch--cold"></i>Cold</span>
+          <span class="legend__item"><i class="legend__swatch legend__swatch--giant"></i>Gas Giants &amp; Ice Giants</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-grid" aria-label="Additional Solar System information">
+      <article class="info-card">
+        <h2>Planet Facts</h2>
+        <ul>
+          <li><strong>Earth:</strong> The only known planet with liquid water on its surface and life as we know it.</li>
+          <li><strong>Jupiter:</strong> The largest planet, famous for the Great Red Spot and dozens of moons.</li>
+          <li><strong>Saturn:</strong> Known for its stunning ring system made mostly of ice and rock particles.</li>
+          <li><strong>Neptune:</strong> A cold, windy ice giant with the fastest winds in the Solar System.</li>
+        </ul>
+      </article>
+
+      <article class="info-card stats-card">
+        <h2>Statistics</h2>
+        <div class="stats-grid">
+          <div class="stat-box">
+            <span class="stat-box__label">Total Planets</span>
+            <strong>8</strong>
+          </div>
+          <div class="stat-box">
+            <span class="stat-box__label">Gas Giants</span>
+            <strong>4</strong>
+          </div>
+          <div class="stat-box">
+            <span class="stat-box__label">Terrestrial Planets</span>
+            <strong>4</strong>
+          </div>
+          <div class="stat-box stat-box--highlight stat-box--volcano">
+            <span class="stat-box__label">Hottest Planet 🌋</span>
+            <strong>Venus</strong>
+          </div>
+          <div class="stat-box stat-box--highlight stat-box--ice">
+            <span class="stat-box__label">Coldest Planet ❄️</span>
+            <strong>Neptune</strong>
+          </div>
+          <div class="stat-box stat-box--highlight stat-box--earth">
+            <span class="stat-box__label">Most Habitable Planet 🌍</span>
+            <strong>Earth</strong>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="site-footer">
+      Created for muLearn Web Development Task
+    </footer>
+  </main>
+</body>
+</html>
