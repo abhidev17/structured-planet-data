@@ -167,6 +167,15 @@ caption {
   margin-bottom: 1rem;
 }
 
+.dwarf-note {
+  margin: 1rem 0 0;
+  padding: 0.95rem 1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(173, 196, 255, 0.12);
+  color: rgba(232, 237, 248, 0.84);
+}
+
 .table-shell {
   overflow-x: auto;
   border-radius: 18px;
@@ -320,6 +329,67 @@ tbody tr:hover {
   background: linear-gradient(135deg, #9d86ff, #3c3fb8);
 }
 
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.fact-card {
+  padding: 1.1rem;
+  border-radius: 20px;
+  border: 1px solid rgba(173, 196, 255, 0.14);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.035));
+  box-shadow: 0 14px 40px rgba(2, 8, 20, 0.24);
+  backdrop-filter: blur(10px);
+  transition: transform 180ms ease, border-color 180ms ease, background-color 180ms ease;
+}
+
+.fact-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(138, 183, 255, 0.28);
+}
+
+.fact-card h3 {
+  margin: 0 0 0.75rem;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 1.15rem;
+}
+
+.fact-card ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  color: rgba(232, 237, 248, 0.86);
+}
+
+.fact-card li + li {
+  margin-top: 0.5rem;
+}
+
+.fact-card--mercury {
+  box-shadow: inset 0 0 0 1px rgba(255, 163, 103, 0.12), 0 14px 40px rgba(2, 8, 20, 0.24);
+}
+
+.fact-card--venus {
+  box-shadow: inset 0 0 0 1px rgba(255, 117, 84, 0.12), 0 14px 40px rgba(2, 8, 20, 0.24);
+}
+
+.fact-card--earth {
+  box-shadow: inset 0 0 0 1px rgba(112, 223, 140, 0.12), 0 14px 40px rgba(2, 8, 20, 0.24);
+}
+
+.fact-card--mars {
+  box-shadow: inset 0 0 0 1px rgba(111, 193, 255, 0.12), 0 14px 40px rgba(2, 8, 20, 0.24);
+}
+
+.fact-card--jupiter,
+.fact-card--saturn,
+.fact-card--uranus,
+.fact-card--neptune,
+.fact-card--pluto {
+  box-shadow: inset 0 0 0 1px rgba(141, 126, 255, 0.12), 0 14px 40px rgba(2, 8, 20, 0.24);
+}
+
 .info-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -372,6 +442,14 @@ tbody tr:hover {
 
 .stat-box--volcano::before {
   background: radial-gradient(circle, rgba(255, 94, 74, 0.9), transparent 65%);
+}
+
+.stat-box--pluto::before {
+  background: radial-gradient(circle, rgba(198, 214, 255, 0.9), transparent 65%);
+}
+
+.stat-box--jupiter::before {
+  background: radial-gradient(circle, rgba(159, 137, 255, 0.9), transparent 65%);
 }
 
 .stat-box--ice::before {
@@ -451,6 +529,7 @@ tbody tr:hover {
   }
 
   .info-grid,
+  .facts-grid,
   .stats-grid {
     grid-template-columns: 1fr;
   }

@@ -144,19 +144,123 @@
       </div>
     </section>
 
-    <section class="info-grid" aria-label="Additional Solar System information">
-      <article class="info-card">
-        <h2>Planet Facts</h2>
-        <ul>
-          <li><strong>Earth:</strong> The only known planet with liquid water on its surface and life as we know it.</li>
-          <li><strong>Jupiter:</strong> The largest planet, famous for the Great Red Spot and dozens of moons.</li>
-          <li><strong>Saturn:</strong> Known for its stunning ring system made mostly of ice and rock particles.</li>
-          <li><strong>Neptune:</strong> A cold, windy ice giant with the fastest winds in the Solar System.</li>
-        </ul>
-      </article>
+    <section class="section-card" aria-labelledby="dwarf-planet-title">
+      <div class="section-heading">
+        <p class="section-heading__tag">Dwarf planet</p>
+        <h2 id="dwarf-planet-title">Pluto overview</h2>
+      </div>
 
+      <div class="table-shell">
+        <!-- This separate table highlights Pluto as a dwarf planet rather than a major planet. -->
+        <table>
+          <caption>
+            Pluto is included as a dwarf planet to show how smaller bodies are classified in the outer Solar System.
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Planet Name</th>
+              <th scope="col">Classification</th>
+              <th scope="col">Diameter (km)</th>
+              <th scope="col">Distance from Sun (million km)</th>
+              <th scope="col">Average Temperature (&deg;C)</th>
+              <th scope="col">Number of Moons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="planet-chip">♇ Pluto</span></td>
+              <td>Dwarf Planet</td>
+              <td>2,376</td>
+              <td>5,906.4</td>
+              <td><span class="temp temp--giant">-225</span></td>
+              <td>5</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p class="dwarf-note">
+          Pluto is classified as a dwarf planet because it orbits the Sun, is round due to its own gravity,
+          but has not cleared other objects from its orbital region.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-card" aria-labelledby="facts-title">
+      <div class="section-heading">
+        <p class="section-heading__tag">Planet facts</p>
+        <h2 id="facts-title">Quick facts by world</h2>
+      </div>
+
+      <div class="facts-grid">
+        <article class="fact-card fact-card--mercury">
+          <h3>☿ Mercury</h3>
+          <ul>
+            <li>Closest planet to the Sun</li>
+            <li>Shortest year in the Solar System</li>
+          </ul>
+        </article>
+        <article class="fact-card fact-card--venus">
+          <h3>♀ Venus</h3>
+          <ul>
+            <li>Hottest planet</li>
+            <li>Rotates backwards compared to most planets</li>
+          </ul>
+        </article>
+        <article class="fact-card fact-card--earth">
+          <h3>🌍 Earth</h3>
+          <ul>
+            <li>Only known planet with life</li>
+            <li>71% covered by water</li>
+          </ul>
+        </article>
+        <article class="fact-card fact-card--mars">
+          <h3>♂ Mars</h3>
+          <ul>
+            <li>Known as the Red Planet</li>
+            <li>Home to Olympus Mons, the tallest volcano</li>
+          </ul>
+        </article>
+        <article class="fact-card fact-card--jupiter">
+          <h3>♃ Jupiter</h3>
+          <ul>
+            <li>Largest planet</li>
+            <li>Has the Great Red Spot storm</li>
+          </ul>
+        </article>
+        <article class="fact-card fact-card--saturn">
+          <h3>♄ Saturn</h3>
+          <ul>
+            <li>Famous for its rings</li>
+            <li>Could float in water due to low density</li>
+          </ul>
+        </article>
+        <article class="fact-card fact-card--uranus">
+          <h3>⛢ Uranus</h3>
+          <ul>
+            <li>Rotates on its side</li>
+            <li>Has a blue-green color due to methane</li>
+          </ul>
+        </article>
+        <article class="fact-card fact-card--neptune">
+          <h3>♆ Neptune</h3>
+          <ul>
+            <li>Windiest planet</li>
+            <li>Farthest official planet from the Sun</li>
+          </ul>
+        </article>
+        <article class="fact-card fact-card--pluto">
+          <h3>♇ Pluto</h3>
+          <ul>
+            <li>Former ninth planet</li>
+            <li>Reclassified as a dwarf planet in 2006</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="info-grid" aria-label="Statistics dashboard">
       <article class="info-card stats-card">
-        <h2>Statistics</h2>
+        <h2>Statistics Dashboard</h2>
         <div class="stats-grid">
           <div class="stat-box">
             <span class="stat-box__label">Total Planets</span>
@@ -169,6 +273,14 @@
           <div class="stat-box">
             <span class="stat-box__label">Terrestrial Planets</span>
             <strong>4</strong>
+          </div>
+          <div class="stat-box stat-box--highlight stat-box--pluto">
+            <span class="stat-box__label">Dwarf Planets Shown</span>
+            <strong>1</strong>
+          </div>
+          <div class="stat-box stat-box--highlight stat-box--jupiter">
+            <span class="stat-box__label">Largest Planet 🪐</span>
+            <strong>Jupiter</strong>
           </div>
           <div class="stat-box stat-box--highlight stat-box--volcano">
             <span class="stat-box__label">Hottest Planet 🌋</span>
